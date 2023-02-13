@@ -1,2 +1,2 @@
 -- Lista de exercícios resolvidos nessa sessão:
--[!Lista]Lista(https://github.com/Raii-Azevedo/PROG-II/blob/main/Lista/listaExerProgFarrer-REV.pdf)
+-![Lista]Lista(https://github.com/Raii-Azevedo/PROG-II/blob/main/Lista/listaExerProgFarrer-REV.pdf)
