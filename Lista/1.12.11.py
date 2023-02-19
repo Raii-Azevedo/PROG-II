@@ -11,3 +11,5 @@ candidatos do sexo feminino (escreva também o código correspondente do curso);
 - determine o maior número de candidatos por vaga e escreva esse número juntamente com o 
 código do curso correspondente (supor que não haja empate);
 - calcule e escreva o total de candidatos;\n''')
+
+
