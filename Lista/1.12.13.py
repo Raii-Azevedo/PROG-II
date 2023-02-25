@@ -16,3 +16,51 @@ e) a média geral de consumo;
 a) para cada consumidor, o seu número e o total a pagar;
 b) o que foi calculado nos itens b, c, d, e acima especificados.\n''')
 
+# CÓDIGO COMPLETAMENTE ERRADO
+
+def main():
+    print(f'- CONSUMO DE ENERGIA ELÉTRICA'
+          'Preço: R$ 5.85\n')
+
+    tot1 = tot2 = tot3 = count = 0
+
+    N = int(input('N° consumidor: '))
+    while N !=0:
+
+        cod = int(input(f'\nCódigo consumidor\n'
+              '[1] - Residencial\n'
+              '[2] - Comercial\n'
+              '[3] - Industrial\n'
+              'Digite o Nº desejado: '))
+        
+        consumo = float(input(' Consumo wt mês: '))
+        menor = maior = consumo
+        
+        if consumo < menor:
+            menor = consumo
+        if consumo > maior:
+            maior = consumo
+
+        if cod == 1:
+            tot1 += consumo
+            count += 1
+        elif cod == 2:
+            tot2 += consumo
+            count += 1
+        elif cod == 3:
+            tot3 += consumo
+            count += 1
+        
+        N = int(input('N° consumidor: '))
+
+    if cod == 1:
+        media = tot1/count
+    if cod == 2:
+        media = tot2/count
+    if cod == 3:
+        media = tot3/count
+
+    print(f'\nTOTAL CONSUMO\nN° consumidor: {N}\nCódigo: {cod}\nValor a pagar: R${media}')
+
+if __name__ == "__main__":
+    main()
