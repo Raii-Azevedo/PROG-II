@@ -16,3 +16,28 @@ h) R$900 - R$999
 i) R$1000 em diante
 Desafio: Crie uma função para chegar na posição da lista a partir do salário, sem 
 fazer vários ifs aninhados.\n''')
+
+salarios = []
+
+for i in range (10):
+    valor = int(input('Valor da venda: '))
+
+    salarios.append(valor)
+
+
+contadores = [0] * 9
+
+for salario in salarios:
+    comissao = salario * 0.09
+    salario_total = salario + 200 + comissao
+    indice = max(0, min(int((salario_total - 200) / 100), 8))
+    contadores[indice] += 1
+
+for i, contador in enumerate(contadores):
+    if i == 8:
+        print(f"R$1000 em diante: {contador}")
+    else:
+        print(f"R${200+(i*100)}-R${299+(i*100)}: {contador}")
+
+
+
