@@ -1,5 +1,9 @@
 def achacontador(lstf, totalv):
     salario = 200 + totalv * 0.09
+    # Garantir que o valor sempre sej achado para entrar no laço IF
+    # A posição final da lista pode ser representada por [-1] ou [len(lista)-1] como abaixo:
+
+    lstf[len(lstf)-1][1] = totalv
 
     for i in range(len(lstf)):
         t = lstf[i]
@@ -7,7 +11,7 @@ def achacontador(lstf, totalv):
             return i
 
 def main():
-    lst = [(200, 299), (300, 399), (400, 499), (500, 599), (600, 699), (700, 799), (800, 899), (900, 999), (1000, 8000)]
+    lst = [(200, 299), (300, 399), (400, 499), (500, 599), (600, 699), (700, 799), (800, 899), (900, 999), (1000, 9999)]
 
     contador = [0] * 9
 
@@ -21,3 +25,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
