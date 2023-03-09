@@ -20,3 +20,16 @@ print(b)
 s = "João da Silva Medeiros"
 aux = s[0:8] + "s" + s[9:]
 print(aux)
+
+
+# COMANDOS PARA TRATAR PALAVRAS
+s = "Ifes campus serra!!"
+s1 = "yfdskfdhfo"
+print(s1.isalpha()) # Indica se todos os caracteres são Letras
+
+s2 = "565"
+print(s2.isdigit()) # Indica se todos os caracteres são números
+
+s3 = "ifes@campus123"
+print(s3.isalnum()) # Vai indicar falso devido o @
+
