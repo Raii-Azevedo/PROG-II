@@ -29,38 +29,37 @@ def separa(txt):
 
 
 def print_contagem(lst_pl, lst_cont):
-    for i in range(lst_pl):
+    for i in range(len(lst_pl)):
         print("%50s%8d" % (lst_pl[i], lst_cont[i]))
 
 
 def repetidas(lst):
     lst_palavras = []
-    lista_contadores = [0] * len(lst)
-
-    for palavra in lst:
-        if palavra not in lst_palavras:
-            lst_palavras.append(palavra)
-            lista_contadores.append(1)
-        else:
-            pos = lst_palavras.index(palavra)
-            lista_contadores[pos] += 1
-
-        return lst_palavras
-
-def main():
-
     lista_contadores = []
 
+    for palavra in lst:
+        if palavra in lst_palavras:
+            pos = lst_palavras.index(palavra)
+            lista_contadores[pos] += 1
+        else:
+            lst_palavras.append(palavra)
+            lista_contadores.append(1)
+
+    return lst_palavras, lista_contadores
+
+def main():
     s = open('conteudotexto.txt', 'rt').read()
 
     lst_palavras = separa(s)
 
     print_palavras(lst_palavras)
 
-    print(f' Foram encontradas {len(lst_palavras)} palavras na lista')
+    print(f'Foram encontradas {len(lst_palavras)} palavras na lista')
 
-    print_contagem(lst_palavras, lista_contadores)
+    lst_palavras, lista_contadores = repetidas(lst_palavras)
     
+    print_contagem(lst_palavras, lista_contadores)
 
 if __name__ == "__main__":
     main()
+    
