@@ -63,3 +63,5 @@ def main():
 if __name__ == "__main__":
     main()
     
+# PARA CRIAR UM ARQUIVO TXT DIRETO DO TERMINAL
+# Ex.py" > contagem.txt
