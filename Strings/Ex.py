@@ -1,6 +1,7 @@
 # Construa uma função que recebe uma string contendo um texto qualquer e retorne uma lista das palavras encontradas no texto.
 # Limpar a sujeira no meio da palavra
 # Remover palavras repetidas - Contar essas palavras e indicar!
+# Retirar os vazios (limpeza nos erro gramaticais)
 
 def faxina(palavra): #Mens eficiente
     if palavra.isalnum():
