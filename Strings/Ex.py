@@ -3,7 +3,7 @@
 # Remover palavras repetidas - Contar essas palavras e indicar!
 # Retirar os vazios (limpeza nos erro gramaticais)
 
-def faxina(palavra): #Mens eficiente
+def faxina(palavra): # Menos eficiente
     if palavra.isalnum():
         return palavra
     else: # Utilizar fatiamento para eliminar o caractere que está no final
