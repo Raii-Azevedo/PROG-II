@@ -1,5 +1,6 @@
 def matriz(soma):
-    with open('soma5x10,txt', 'wt') as file:
+    saida = input('Digite o nome de arquivo de saída: ')
+    with open(f'{saida}.txt', 'wt') as file:
         s = ""
         for i in range(len(soma)):
             for j in range(len(soma[0])):
