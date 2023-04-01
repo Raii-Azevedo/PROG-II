@@ -1,5 +1,6 @@
-Ifes Campus Serra
-BSI – Bacharelado de Sistemas de Informação
+## TAREFA 1 - ARQUIVOS
+ 
+- BSI – Bacharelado de Sistemas de Informação
 Programação II
 Tarefa 01: Arquivos
 Enunciado
@@ -46,3 +47,13 @@ fórum da disciplina no ava; aulas presenciais de prog2; visita ao Professor, sa
 Entrega
 Leia as instruções de entrega no cabeçalho da tarefa, no Ava.
 Bons estudos. Fim!
+
+ 
+## Links
+ 
+  - Repository: https://github.com/Raii-Azevedo/LongLife
+ 
+ 
+## Authors
+ 
+* **RAISSA AZEVEDO**: @Raii-Azevedo (https://github.com/Raii-Azevedo)
