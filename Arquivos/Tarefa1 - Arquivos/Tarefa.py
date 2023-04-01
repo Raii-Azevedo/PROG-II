@@ -9,7 +9,6 @@ def matriz(soma):
         file.write(s)
 
     file.close()
-    print('\nPROCESSAMENTO CONCLUÍDO')
     
 
 def somaMat(ma,mb):
@@ -57,7 +56,7 @@ def main():
 
     # Loop para leitura de matrizes
     for i in range(quant):
-        nomearq = input('\nDigite o nome do arquivo para leitura: ')
+        nomearq = input(f'\nDigite o nome do {i+1}º arquivo para leitura: ')
         arquivo.append(nomearq)
         ma_arq, mb_arq = loadmat(nomearq, arquivo)
         ma += ma_arq
@@ -66,6 +65,8 @@ def main():
     soma = somaMat(ma, mb)
 
     matriz(soma)
+
+    print('\nPROCESSAMENTO CONCLUÍDO')
 
     
 
