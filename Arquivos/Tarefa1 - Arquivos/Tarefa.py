@@ -1,8 +1,21 @@
+def matriz(soma):
+    with open('soma5x10,txt', 'wt') as file:
+        s = ""
+        for i in range(len(soma)):
+            for j in range(len(soma[0])):
+                s = s + ("%5d" % soma[i][j])
+            s = s + "\n"
+        file.write(s)
+
+    file.close()
+    print('\nPROCESSAMENTO CONCLUÍDO')
+    
+
 def somaMat(ma,mb):
     linhas = len(ma)
     colunas = len(ma[0])  
 
-    soma = [[0] * colunas for _ in range(linhas)]
+    soma = [[0] * colunas for linha in range(linhas)]
 
     for i in range(linhas):
         for j in range(colunas):
@@ -49,16 +62,11 @@ def main():
         ma += ma_arq
         mb += mb_arq
 
-    print(ma)
-    print()
-    print(mb)
-
     soma = somaMat(ma, mb)
 
-    print(soma)
+    matriz(soma)
 
     
-
 
 if __name__ == '__main__':
     main()
