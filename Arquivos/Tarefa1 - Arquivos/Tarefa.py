@@ -2,7 +2,7 @@ def matriz(soma): # Função que recebe matriz(lista) e escreve num arquivo
     saida = input('\nDigite o nome de arquivo de saída: ')
     with open(f'{saida}.txt', 'wt') as file:
         s = ""
-        for i in range(len(soma)): #Laço que transforma a lista no formato de matriz
+        for i in range(len(soma)): # Laço que transforma a lista no formato de matriz
             for j in range(len(soma[0])):
                 s = s + ("%5d" % soma[i][j])
             s = s + "\n"
