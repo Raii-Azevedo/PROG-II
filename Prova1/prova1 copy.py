@@ -1,34 +1,15 @@
 def relatorioDomains(nomearq, lst):
-    arq = open(nomearq, "wt")
-    lst_count = []
-    position = 0
-    for UF in lst:
-        lst_count.append((UF[0], []))
-        for site in UF[1]:
-            dom = site.split(".")
-            lst_count[position][1].append(dom[len(dom) - 2])
-
-        position += 1
-
-    lstContados = []
-    contador = 0
-    for dominio in lst_count:
-        arq.write(dominio[0] + ":")
-        arq.write("\n")
-        lstContados = []
-        for penultimo in dominio[1]:
-            contador = 0
-            if penultimo not in lstContados:
-                lstContados.append(penultimo)
-                for cod in dominio[1]:
-                    if cod == penultimo:
-                        contador += 1
-                arq.write("{}:{}\n".format(penultimo, contador))
-
-        arq.write("\n")
-
-    arq.close()
+    with open(nomearq, "w") as arq:
+        for uf, sites in lst:
+            arq.write(f"{uf}:\n")
+            dominios = [site.split(".")[-2] for site in sites]
+            dominios_contados = set(dominios)
+            for dominio in dominios_contados:
+                count = dominios.count(dominio)
+                arq.write(f"{dominio}:{count}\n")
+            arq.write("\n")
     return lst
+
 
 
 def processa(nomearq):
