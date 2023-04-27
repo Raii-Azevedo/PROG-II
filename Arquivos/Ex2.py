@@ -9,6 +9,7 @@ def main():
     while linha1 !='':
         T.write(linha1)
         linha1 = F.readline()
+    T.write('\n\n')
 
     T.close()
     F.close()
