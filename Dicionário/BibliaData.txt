@@ -1,8 +1,8 @@
 - BASE DE DADOS BÍBLIA -
 
-Total de palavras: 483232
+Total de palavras: 476389
 
-Total de palavras diferentes: 29095
+Total de palavras diferentes: 29093
 
 As 20 palavras mais frequentes:
 1° - "não": 8216 
@@ -10,18 +10,18 @@ As 20 palavras mais frequentes:
 3° - "deus": 4417 
 4° - "como": 3906 
 5° - "ele": 3855 
-6° - "seu": 3720 
-7° - "sua": 3428 
-8° - "seus": 3123 
-9° - "eu": 3014 
-10° - "terra": 2936 
-11° - "filhos": 2781 
-12° - "porque": 2774 
-13° - "sobre": 2761 
-14° - "israel": 2542 
-15° - "rei": 2475 
-16° - "todos": 2353 
-17° - "filho": 2322 
-18° - "meu": 2197 
-19° - "também": 2173 
-20° - "disse": 2079 
+6° - "sua": 3428 
+7° - "eu": 3014 
+8° - "terra": 2936 
+9° - "filhos": 2781 
+10° - "porque": 2774 
+11° - "sobre": 2761 
+12° - "israel": 2542 
+13° - "rei": 2475 
+14° - "todos": 2353 
+15° - "filho": 2322 
+16° - "meu": 2197 
+17° - "também": 2173 
+18° - "disse": 2079 
+19° - "assim": 2066 
+20° - "casa": 1968 

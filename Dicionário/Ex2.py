@@ -14,7 +14,7 @@ def faxina(palavra):
 def loadfile():
     D = {}
 
-    proibidos = ['a','à','o','e','na','no','se','teu','tua','então','uma','um','de','que','os',
+    proibidos = ['a','à','o','e','na','no','se','seu','seus','teu','tua','então','uma','um','de','que','os',
                  'dos','para','do','as','com','em','da','é','ao','por','mas','pois','te','me']
 
     with open('biblia.txt', 'rt', encoding='utf-8') as arquivo:
