@@ -5,7 +5,7 @@ def converte_2_txt(dic, n):
 
     else:
         aux = n
-        n = abs(n) # Converte ppara absoluto para lidar com números negativos
+        n = abs(n) # Converte para absoluto para lidar com números negativos
         dezena = (n // 10) % 10
         unidade = (n % 10)
         centena = (n // 100) * 100
