@@ -1,27 +1,27 @@
 import csv
 import json
 
-def json_to_json(PLACA): # DOCUMENTO JSON
-    dict_2_json = {"dados": PLACA}
+def json_to_json(nomearq): # DOCUMENTO JSON
+    dict_2_json = {"dados": nomearq}
     with open('saida.json', 'w') as file:
         json.dump(dict_2_json, file, indent=4, sort_keys=True) # Indent 4 --> Formato JSON padrão
         file.close()
 
 
-def json_to_dic_cpfs(J):
+def json_to_dic_cpfs(nomearqjson):
     novo_dicionario = {}
 
-    for dicionario in J:
+    for dicionario in nomearqjson:
         cpf = dicionario.pop('cpf')  # Obtém o valor da chave 'placa'
         novo_dicionario[cpf] = dicionario  # Adiciona a placa como chave ao novo dicionário
 
     return novo_dicionario
 
 
-def json_to_dic_placas(D):
+def json_to_dic_placas(nomearqjson):
     novo_dicionario = {}
 
-    for dicionario in D:
+    for dicionario in nomearqjson:
         placa = dicionario.pop('placa')  # Obtém o valor da chave 'placa'
         novo_dicionario[placa] = dicionario  # Adiciona a placa como chave ao novo dicionário
 
@@ -95,9 +95,7 @@ def veiculos_2_json(nomearq):  # Função ler ARQ
 
 
 def main():
-
-    nomearq = 'bdveiculos.csv'
-
+    nomearq= 'bdveiculos.csv'
     D = veiculos_2_json(nomearq)
 
     nomearq = 'bdproprietarios.csv'
@@ -105,13 +103,12 @@ def main():
     J = props_2_json(nomearq)
 
     PLACA = json_to_dic_placas(D)
-
     CPF = json_to_dic_cpfs(J)
 
-    JSON = json_to_json(PLACA)
+    nomearq = PLACA
+    json_to_json(PLACA)
 
     print('-- PROCESSAMENTO FINALIZADO --')
-
 
 if __name__ == '__main__':
     main()
