@@ -5,6 +5,7 @@ def json_to_json(PLACA): # DOCUMENTO JSON
     dict_2_json = {"dados": PLACA}
     with open('saida.json', 'w') as file:
         json.dump(dict_2_json, file, indent=4, sort_keys=True) # Indent 4 --> Formato JSON padrão
+        file.close()
 
 
 def json_to_dic_cpfs(J):
