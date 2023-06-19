@@ -45,3 +45,15 @@ insertion_sort(lista)
 print(lista)  # Saída: [1, 2, 5, 8, 12]
 
 - Nesse exemplo, a função insertion_sort recebe uma lista como entrada e a ordena utilizando o algoritmo de Insertion Sort. Ao final, a lista é impressa para verificar a ordenação correta.
+
+
+
+# MERGE SORT
+
+O MergeSort é um algoritmo de ordenação eficiente que divide uma lista não ordenada em partes menores, ordena essas partes individualmente e, em seguida, combina-as em uma única lista ordenada. O algoritmo funciona da seguinte maneira:
+
+Divisão: A lista original é dividida ao meio recursivamente até que cada parte contenha apenas um elemento ou esteja vazia.
+
+Ordenação: Em seguida, o algoritmo começa a combinar as partes em pares e as ordena enquanto as combina. Ele compara o primeiro elemento de cada parte e seleciona o menor, movendo-o para uma nova lista.
+
+Combinação: O algoritmo continua combinando as partes ordenadas até que todos os elementos estejam na lista final ordenada.
