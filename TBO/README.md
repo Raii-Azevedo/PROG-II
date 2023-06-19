@@ -57,3 +57,39 @@ Divisão: A lista original é dividida ao meio recursivamente até que cada part
 Ordenação: Em seguida, o algoritmo começa a combinar as partes em pares e as ordena enquanto as combina. Ele compara o primeiro elemento de cada parte e seleciona o menor, movendo-o para uma nova lista.
 
 Combinação: O algoritmo continua combinando as partes ordenadas até que todos os elementos estejam na lista final ordenada.
+
+#### def merge_sort(lista):
+    def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    mid = len(arr) // 2
+    left = arr[:mid]
+    right = arr[mid:]
+    
+    left = merge_sort(left)
+    right = merge_sort(right)
+    
+    return merge(left, right)
+
+def merge(left, right):
+    merged = []
+    i = j = 0
+    
+    while i < len(left) and j < len(right):
+        if left[i]["Km"] < right[j]["Km"]:
+            merged.append(left[i])
+            i += 1
+        else:
+            merged.append(right[j])
+            j += 1
+    
+    while i < len(left):
+        merged.append(left[i])
+        i += 1
+    
+    while j < len(right):
+        merged.append(right[j])
+        j += 1
+    
+    return merged
