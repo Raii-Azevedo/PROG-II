@@ -11,4 +11,12 @@
   
 
   ### TRABALHO
-        - 
+
+        - Construir um TAD Matriz
+        - CriaMatriz(A,B)
+        - Multiplicação(A,B)
+        - Negação(A)
+        - Trasposição(A)
+
+        - armat.txt (Arquivo com matrizes gravadas)
+        - Saída: Nome da equação exigida com o resultado
