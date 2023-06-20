@@ -11,7 +11,7 @@
   
 
   ### TRABALHO
-
+        DUPLA: 30 Pontos (26/06 até 23:00)
         - Construir um TAD Matriz
         - CriaMatriz(A,B)
         - Multiplicação(A,B)
